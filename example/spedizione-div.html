@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form spedizione</title>
+</head>
+<body>
+
+    <form method="get" action="https://postb.in/1677509265566-1128387872595" id="delivery" autocomplete="on">
+
+        <div>
+            <div style="display: inline">Campo</div>
+            <div style="display: inline">Input</div>
+        </div>
+
+        <div>
+            <div  style="display: inline"><label for="name">Nome*</label></div>
+            <div><input type="text" name="name" id="name" placeholder="Nome" required></div>
+
+            </div>
+        </div>
+
+        <div>
+            <div><label for="lastname">Cognome*</label></div>
+            <div><input type="text" name="lastname" id="lastname" placeholder="Cognome" required></div>
+        </div>
+
+        <div>
+            <div><label for="address">Indirizzo*</label></div>
+            <div><input type="text" name="address" id="address" placeholder="Via tal dei tali" required></div>
+        </div>
+
+        <div>
+            <div><label for="po">Civico</label></div>
+                <div><input type="number" name="po" id="po"></div>
+        </div>
+
+        <div>
+            <div><label for="province">Provincia*</label></div>
+            <div><select name="province" id="province" required>
+                    <option value="MI">Milano</option>
+                    <option value="RO">Roma</option>
+                    <option value="TO">Torino</option>
+                    <option value="OTHER">Altro</option>
+                </select></div>
+        </div>
+
+        <div>
+            <div><label for="cap">Cap</label></div>
+            <div><input type="number" name="cap" id="cap"></div>
+        </div>
+
+        <div>
+            <div><label for="city">Città*</label></div>
+            <div><input type="text" name="city" id="city" required></div>
+        </div>
+
+        <div>
+            <div><label for="country">Nazione*</label></div>
+            <div><input type="text" name="country" id="country" required></div>
+        </div>
+
+        <div>
+            <div><label for="phone">Telefono</label></div>
+            <div><input type="tel" name="phone" id="phone" required></div>
+        </div>
+
+        <div>
+            <div><label for="email">Email*</label></div>
+            <div><input type="email" name="email" id="email" placeholder="tua@mail.it" required></div>
+        </div>
+
+        <div>
+            <div><label for="note">Note</label></div>
+            <div><textarea name="note" id="note" cols="30" rows="10"></textarea></div>
+        </div>
+
+        <div>
+            <div><input type="submit" value="Invia"></div>
+        </div>
+
+    </form>
+</table>
+
+<button type="reset" form="delivery">Reset</button>
+</body>
+</html>
